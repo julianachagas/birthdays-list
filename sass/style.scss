@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+@mixin responsive() {
+  @media (max-width: 500px) {
+    @content;
+  }
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input,
+button {
+  border: none;
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+header {
+  height: 18rem;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(90deg, #b7abff 0%, #95c5ea 100%);
+  @include responsive() {
+    height: 14rem;
+  }
+  h1 {
+    font-size: 3.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: #252744;
+    font-family: 'Yeseva One', cursive;
+  }
+}
+
+.container {
+  width: min(800px, 90%);
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: #7cbbeb;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  min-width: 15rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+  color: #252744;
+  &:hover {
+    background-color: darken(#7cbbeb, 10%);
+  }
+  @include responsive() {
+    width: 100%;
+  }
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.birthdays-form {
+  margin-block: 5rem 2.5rem;
+  label {
+    display: block;
+    margin-bottom: 0.8rem;
+    span {
+      font-size: 1.4rem;
+    }
+  }
+  input {
+    padding: 0.8rem;
+    background-color: rgb(236, 236, 236);
+    border-radius: 8px;
+    width: 100%;
+  }
+  .feedback {
+    margin-block: 0.5rem 1rem;
+    font-size: 1.4rem;
+    color: red;
+  }
+  .edit-feedback {
+    margin-top: 1rem;
+    color: green;
+    font-weight: 500;
+  }
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 5rem;
+}
+
+.birthdays-table {
+  border-collapse: collapse;
+  width: 100%;
+  th {
+    background-color: rgba(149, 197, 234, 0.3);
+  }
+  th,
+  td {
+    border: 1px solid rgb(211, 211, 211);
+    padding: 0.8rem 1.5rem;
+  }
+  th {
+    text-align: left;
+  }
+  tr {
+    transition: background-color 0.3s ease-in-out;
+  }
+  .edit-btn,
+  .delete-btn {
+    font-weight: 500;
+    line-height: 1.5;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .edit-btn {
+    margin-right: 2rem;
+    color: #1378c5;
+  }
+  .delete-btn {
+    color: #c1121f;
+  }
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding-block: 1rem;
+  a:hover {
+    text-decoration: underline;
+    color: #1378c5;
+  }
+}
