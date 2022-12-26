@@ -6,9 +6,9 @@ Concepts practiced: DOM Manipulation, Events, Local Storage, Constraint Validati
 
 This project is part of the [7 Days Of Code](https://7daysofcode.io/) Challenge by Alura, a Brazilian learning platform.
 
-### Status
+## 🔗 Link
 
-🚧 _in progress_ 🚧
+- [Live Demo](https://julianachagas.github.io/birthdays-list)
 
 ## 🛠️ Technologies
 
@@ -25,6 +25,21 @@ This project is part of the [7 Days Of Code](https://7daysofcode.io/) Challenge 
 - Update: edit entry
 - Delete: delete entry from the UI and local storage
 - Message when input is invalid
+
+## 💻 Demo
+
+- Create and Read
+
+<img src="github/demo1.gif" alt=""/> <br/><br/>
+
+- Update and Delete
+
+<img src="github/demo2.gif" alt=""/> <br/><br/>
+
+## 📚 Resources
+
+- CRUD Operations: [article on freeCodeCamp](https://www.freecodecamp.org/news/crud-operations-explained/)
+- "Is the Javascript date object always one day off?": [StackOverflow](https://stackoverflow.com/questions/7556591/is-the-javascript-date-object-always-one-day-off)
 
 ## 👩🏻‍💻 Author
 
